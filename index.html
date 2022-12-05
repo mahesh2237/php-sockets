@@ -5,8 +5,11 @@
         </style>
     </head>
     <body>
+        <form>
+         <label>Enter Any Message</label>   
         <input type="text" id="message" />
-        <button onclick="transmitMessage()">Send</button>
+        <button type="button" onclick="transmitMessage()">Send</button>
+        </form>
         <script>
             // Create a new WebSocket.
             var socket  = new WebSocket('ws://localhost:8080');
